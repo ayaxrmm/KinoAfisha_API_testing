@@ -1,0 +1,505 @@
+{
+	"id": "34906f00-875c-450d-827f-04e991cd4e64",
+	"name": "kinoAfisha API testing",
+	"timestamp": "2026-06-25T20:18:29.640Z",
+	"collection_id": "44330630-5d5dba7d-a0c6-4a04-8580-84556afb20cd",
+	"folder_id": 0,
+	"environment_id": "44330630-02925105-707b-4f9f-8f01-32d5b16a8e8c",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-06-25T20:18:28.634Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7003be72-be55-449d-bf63-7423e57be4d8",
+			"name": "200 OK - getting movies list",
+			"url": "http://127.0.0.1:8000/api/movies/",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is JSON": true,
+				"Response time < 1000 ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time < 1000 ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is JSON": true,
+					"Response time < 1000 ms": true
+				}
+			]
+		},
+		{
+			"id": "b26112b4-f3d9-4194-b7ca-22df3b88def6",
+			"name": "201 Created - Movie Create",
+			"url": "http://127.0.0.1:8000/api/movies/",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "540cc769-2aaf-48f5-abee-69b9b9e624b5",
+			"name": "200 OK - Movie by ID",
+			"url": "http://127.0.0.1:8000/api/movies/3",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5d6b574f-8d9a-463a-850e-8cfc8008b8c8",
+			"name": "404 NotFound - Movie by wrong ID",
+			"url": "http://127.0.0.1:8000/api/movies/11",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c3ad708d-e84f-46d6-bebd-14a0d9e030da",
+			"name": "200 OK - Full Movie update",
+			"url": "http://127.0.0.1:8000/api/movies/13",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d8869c05-4f19-481d-ad90-f9ca4259cf1b",
+			"name": "204 NoContent - Movie Delete",
+			"url": "http://127.0.0.1:8000/api/movies/14",
+			"time": 7,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a125fca5-0f10-4e1a-88ef-d617babd6b93",
+			"name": "Cinema List",
+			"url": "http://127.0.0.1:8000/api/cinema/",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ecfe3f2f-edea-48e3-90fd-5c06cdbc2038",
+			"name": "Cinema Create",
+			"url": "http://127.0.0.1:8000/api/cinema/",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "77b18170-a292-4f4f-9e50-7e1943dd7db9",
+			"name": "Cinema Detail",
+			"url": "http://127.0.0.1:8000/api/cinema/1/",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "47b8ed32-a3a3-4528-bcf5-4fb2e4444a6a",
+			"name": "Cinema Update",
+			"url": "http://127.0.0.1:8000/api/cinema/4/",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "af96243a-e3a6-421c-8296-d64c5e70c46d",
+			"name": "Cinema Delete",
+			"url": "http://127.0.0.1:8000/api/cinema/4/",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "43fa6997-6ebb-4618-89d2-4aa8fd69c4d2",
+			"name": "200 OK - Login",
+			"url": "http://127.0.0.1:8000/api/login/",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				203
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d5760c7a-d704-48c1-97d9-9060a15ba7cc",
+			"name": "401 Unauthorized - Loging with wrong pass",
+			"url": "http://127.0.0.1:8000/api/login/",
+			"time": 173,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				173
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1b5019b3-e60e-45bd-b6f9-805ec86486fa",
+			"name": "201 Created - Register",
+			"url": "http://127.0.0.1:8000/api/register/",
+			"time": 175,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				175
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1e30b6fa-97ae-4650-bdd8-06c9c2bc1c18",
+			"name": "400 Bad Request - Register with existing username",
+			"url": "http://127.0.0.1:8000/api/register/",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "db2b22f8-73cd-4b09-8fdf-382ecee114a0",
+			"name": "400 Bad Request - Register with existing username Copy",
+			"url": "http://127.0.0.1:8000/api/register/",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "44e7f37e-f19d-4d26-b708-ad1b6f97380b",
+			"name": "400 Bad Request - Register without email",
+			"url": "http://127.0.0.1:8000/api/register/",
+			"time": 2,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5762dbbc-2ae4-470f-be0e-1d782624f508",
+			"name": "200 OK - Booking List",
+			"url": "http://127.0.0.1:8000/api/booking/my",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5dfe4f01-1da3-4560-ab97-4298a3ef44f2",
+			"name": "201 Created - Booking Create",
+			"url": "http://127.0.0.1:8000/api/booking/",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "855e86cc-f4ba-4b3b-9da4-500e33cd130b",
+			"name": "400 Bad Request - Booking with wrong id",
+			"url": "http://127.0.0.1:8000/api/booking/",
+			"time": 3,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5dd1121f-851f-4682-96bc-52feeedb2300",
+			"name": "Screening List",
+			"url": "http://127.0.0.1:8000/api/screening/",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 635,
+	"collection": {
+		"requests": [
+			{
+				"id": "7003be72-be55-449d-bf63-7423e57be4d8",
+				"method": "GET"
+			},
+			{
+				"id": "b26112b4-f3d9-4194-b7ca-22df3b88def6",
+				"method": "POST"
+			},
+			{
+				"id": "540cc769-2aaf-48f5-abee-69b9b9e624b5",
+				"method": "GET"
+			},
+			{
+				"id": "5d6b574f-8d9a-463a-850e-8cfc8008b8c8",
+				"method": "GET"
+			},
+			{
+				"id": "c3ad708d-e84f-46d6-bebd-14a0d9e030da",
+				"method": "PUT"
+			},
+			{
+				"id": "d8869c05-4f19-481d-ad90-f9ca4259cf1b",
+				"method": "DELETE"
+			},
+			{
+				"id": "a125fca5-0f10-4e1a-88ef-d617babd6b93",
+				"method": "GET"
+			},
+			{
+				"id": "ecfe3f2f-edea-48e3-90fd-5c06cdbc2038",
+				"method": "POST"
+			},
+			{
+				"id": "77b18170-a292-4f4f-9e50-7e1943dd7db9",
+				"method": "GET"
+			},
+			{
+				"id": "47b8ed32-a3a3-4528-bcf5-4fb2e4444a6a",
+				"method": "PUT"
+			},
+			{
+				"id": "af96243a-e3a6-421c-8296-d64c5e70c46d",
+				"method": "DELETE"
+			},
+			{
+				"id": "43fa6997-6ebb-4618-89d2-4aa8fd69c4d2",
+				"method": "POST"
+			},
+			{
+				"id": "d5760c7a-d704-48c1-97d9-9060a15ba7cc",
+				"method": "POST"
+			},
+			{
+				"id": "1b5019b3-e60e-45bd-b6f9-805ec86486fa",
+				"method": "POST"
+			},
+			{
+				"id": "1e30b6fa-97ae-4650-bdd8-06c9c2bc1c18",
+				"method": "POST"
+			},
+			{
+				"id": "db2b22f8-73cd-4b09-8fdf-382ecee114a0",
+				"method": "POST"
+			},
+			{
+				"id": "44e7f37e-f19d-4d26-b708-ad1b6f97380b",
+				"method": "POST"
+			},
+			{
+				"id": "5762dbbc-2ae4-470f-be0e-1d782624f508",
+				"method": "GET"
+			},
+			{
+				"id": "5dfe4f01-1da3-4560-ab97-4298a3ef44f2",
+				"method": "POST"
+			},
+			{
+				"id": "855e86cc-f4ba-4b3b-9da4-500e33cd130b",
+				"method": "POST"
+			},
+			{
+				"id": "5dd1121f-851f-4682-96bc-52feeedb2300",
+				"method": "GET"
+			}
+		]
+	}
+}
