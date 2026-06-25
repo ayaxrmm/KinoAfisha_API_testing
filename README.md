@@ -6,7 +6,6 @@ This repository contains API testing for the **KinoAfisha** web application.
 
 Testing was performed using **Postman** and covers authentication, movies, cinemas, screenings and booking functionality.
 
----
 
 ## Technologies
 
@@ -15,8 +14,7 @@ Testing was performed using **Postman** and covers authentication, movies, cinem
 * Django REST Framework
 * JWT Authentication
 * Collection Runner
-
----
+  
 
 ## Features Tested
 
@@ -50,7 +48,6 @@ Testing was performed using **Postman** and covers authentication, movies, cinem
 * Create Booking
 * Get User Bookings
 
----
 
 ## Test Coverage
 
@@ -70,7 +67,6 @@ Testing was performed using **Postman** and covers authentication, movies, cinem
 * Invalid movie ID
 * Invalid screening ID
 
----
 
 ## Automated Checks
 
@@ -81,7 +77,6 @@ The collection includes automated Postman tests for:
 * JSON validation
 * JWT Token saving into Environment
 
----
 
 ## Project Structure
 
@@ -93,14 +88,12 @@ Postman/
 └── postman_test_run.json
 ```
 
----
 
 ## Documentation
 
 📄 Postman Documentation
 https://documenter.getpostman.com/view/44330630/2sBXwyF6eo
 
----
 
 ## Screenshots
 
@@ -110,7 +103,6 @@ Runner
 
 Documentation
 
----
 
 ## Author
 
